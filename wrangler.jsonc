@@ -1,0 +1,11 @@
+// Nastavení pro Cloudflare Workers (statické soubory). Žádný build: obsah složky ./public se nasadí tak, jak je.
+// Pokud použijete Cloudflare Pages, tento soubor můžete ignorovat a jako výstupní složku nastavit "public".
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "klara-matej-wedding",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "single-page-application"
+  }
+}

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Klara a Matej//Svatba//CS
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:klara-matej-wedding-20270612@example.com
+DTSTAMP:20261004T120000Z
+DTSTART:20270612T133000Z
+DTEND:20270612T230000Z
+SUMMARY:Svatba Kláry a Matěje
+LOCATION:Villa Le Cipressaie\, Strada di Monticchiello 14\, 53026 Pienza (SI)\, Itálie
+DESCRIPTION:Obřad v 15:30 v olivovém háji. Usaďte se prosím do 15:15. Kyvadlová doprava odjíždí z Pienzy a Montepulciana ve 14:45.
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Zítra se berou Klára a Matěj
+END:VALARM
+END:VEVENT
+END:VCALENDAR

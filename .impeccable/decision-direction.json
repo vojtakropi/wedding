@@ -1,0 +1,132 @@
+{
+  "title": "Choose the visual world",
+  "question": "The roll assigned Maiolica: the invitation as a hand-painted Tuscan ceramic panel. Keep it, take an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Maiolica",
+      "kicker": "THE ROLL",
+      "lineage": "Hand-painted tin-glaze tiles of Vietri, Deruta and Montelupo",
+      "thesis": "The invitation is a hand-painted ceramic panel: tiles carry the page and glaze carries every state.",
+      "palette": ["#f1f0ea", "#1f3d9c", "#e9b523", "#2f7a57", "#5a3524", "#c8875a"],
+      "materials": ["milky tin glaze with brush drag", "unglazed biscuit terracotta for empty states", "cobalt line borders painted by hand"],
+      "viewport": "On a phone: the names painted inside one cobalt-framed tile panel with a lemon-and-leaf border, date and villa on the panel foot, the reply tile directly under it.",
+      "risk": "Slides into souvenir-shop kitsch if motifs multiply; it must hold two motifs and one strict tile module.",
+      "raised": [
+        { "from": "challenger-akari", "raise": "One state language: an unchosen option is bare biscuit terracotta, a chosen one fills with glaze." },
+        { "from": "challenger-sleeping-city", "raise": "Each day of the weekend owns one glaze: Friday saffron, Saturday cobalt, Sunday copper green." },
+        { "from": "challenger-one-bit", "raise": "Everything snaps to one tile module; small screens drop columns, never the tile size." },
+        { "from": "challenger-cutting-bench", "raise": "Cobalt commits a third of every viewport, and rank comes from how many tiles an element spans." },
+        { "from": "challenger-synth-grid", "raise": "The tile grid runs unbroken under the whole page as one continuous floor." },
+        { "from": "challenger-flash-scrawl", "raise": "Finished reply steps keep a painted tick on their tile, so progress stays on the surface." }
+      ]
+    },
+    {
+      "id": "model-pick",
+      "label": "Svatební oznámení",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "The folded Czech wedding announcement card with its reply slip",
+      "thesis": "The site is the printed oznámení your grandmother keeps on the shelf, with the reply slip torn off and sent back.",
+      "palette": ["#f7f4ec", "#1d1d1b", "#7d6a4f", "#b9a27a"],
+      "materials": ["heavy cotton card stock", "blind letterpress", "deckled edge"],
+      "viewport": "A single folded card opening on screen: names in fine roman caps, date line, and a perforated reply slip below the fold.",
+      "risk": "This is where most wedding sites land: cream card, serif caps, muted gold. Trusted and familiar, but generic."
+    },
+    {
+      "id": "challenger-akari",
+      "label": "Akari Lantern Workshop",
+      "verdict": "declined",
+      "lineage": "Washi and bamboo folded light sculptures",
+      "thesis": "Every section is a paper lantern that lights up when you reach it.",
+      "palette": ["#f4ead6", "#c9a77a", "#2b2724", "#d0402b"],
+      "materials": ["washi paper", "bamboo ribs", "warm bulb glow"],
+      "viewport": "Glowing paper volumes hanging at different heights, the names on the brightest one.",
+      "case": "Fuses as a lantern-lit dinner, but Czech guests at a Tuscan villa do not recognise a Japanese workshop.",
+      "kept": "One clear state language: lit means chosen.",
+      "risk": "Reads as a foreign theme with no tie to the couple or the place.",
+      "hero": "https://impeccable.style/worlds/cards/paper-folds-pleats-deployable-akari-light-sculpture-hero.webp"
+    },
+    {
+      "id": "challenger-sleeping-city",
+      "label": "Sleeping City Fold",
+      "verdict": "declined",
+      "lineage": "Surreal night cities folding into quilts",
+      "thesis": "The weekend as a city that folds into a blanket at night.",
+      "palette": ["#16203f", "#e9c46a", "#f2efe6", "#6a8caf"],
+      "materials": ["night map", "embroidered window stars", "quilt seams"],
+      "viewport": "A night city map folding over a park, districts tinted by weather.",
+      "case": "Poetic, but an outdoor Tuscan country weekend is not a city at night; clarity suffers.",
+      "kept": "Each district owns its own hue.",
+      "risk": "Guests would have to decode a metaphor to find the date.",
+      "hero": "https://impeccable.style/worlds/cards/dream-surreal-impossible-worlds-sleeping-city-fold-hero.webp"
+    },
+    {
+      "id": "challenger-one-bit",
+      "label": "One-bit Desktop",
+      "verdict": "declined",
+      "lineage": "Early black-and-white desktop computing",
+      "thesis": "The invitation as windows on a one-bit desktop.",
+      "palette": ["#ffffff", "#000000", "#888888"],
+      "materials": ["ordered dither", "pixel chrome"],
+      "viewport": "Overlapping windows with the names in a title bar.",
+      "case": "Witty for tech friends, alienating for grandparents and wrong for a romantic weekend.",
+      "kept": "Strict whole-module scale with nothing off grid.",
+      "risk": "Reads as a joke rather than an invitation.",
+      "hero": "https://impeccable.style/worlds/cards/medium-native-one-bit-desktop-hero.webp"
+    },
+    {
+      "id": "challenger-cutting-bench",
+      "label": "Cutting Bench Rail",
+      "verdict": "declined",
+      "lineage": "Film editing bench with a perforated select rail",
+      "thesis": "Each part of the weekend as a frame strung on a film rail.",
+      "palette": ["#0c0c0c", "#f26a1b", "#ffffff"],
+      "materials": ["film grain", "punched frames", "tape flags"],
+      "viewport": "A perforated rail across an orange field, the ceremony frame flagged.",
+      "case": "Strong system, but guests do not identify with an editing bench and the dark orange field fights a garden wedding.",
+      "kept": "One ink holds a third of every screen; rank by cell count.",
+      "risk": "Feels like a film-festival site, not a wedding.",
+      "hero": "https://impeccable.style/worlds/cards/operate-a-cutting-bench-select-rail-hero.webp"
+    },
+    {
+      "id": "challenger-synth-grid",
+      "label": "Grid Horizon Sunset",
+      "verdict": "declined",
+      "lineage": "1980s synth album covers",
+      "thesis": "Driving toward a striped sunset on a neon grid.",
+      "palette": ["#2a0a4a", "#e0338c", "#22d3ee", "#f59e0b"],
+      "materials": ["wireframe grid", "gradient sky"],
+      "viewport": "Extruded names over a banded sun on the horizon.",
+      "case": "Only the sunset overlaps with Tuscany; the neon world erases the place.",
+      "kept": "One continuous grid that keeps arriving underneath.",
+      "risk": "Retro novelty that guests would not connect to the couple.",
+      "hero": "https://impeccable.style/worlds/cards/digital-design-canon-grid-horizon-sunset-hero.webp"
+    },
+    {
+      "id": "challenger-flash-scrawl",
+      "label": "Flash Scrawl Sleeve",
+      "verdict": "declined",
+      "lineage": "French house record sleeves defaced with marker",
+      "thesis": "A party photo scrawled over with the couple's names.",
+      "palette": ["#111111", "#f5f5f0", "#c6ff00"],
+      "materials": ["direct-flash photo", "fat marker", "sticker stock"],
+      "viewport": "A flash photo with the names drawn over it in marker.",
+      "case": "Energetic, but there are no real photos of the couple yet and the club register misfits older guests.",
+      "kept": "Used marks stay on the surface as history.",
+      "risk": "Depends entirely on photography that does not exist.",
+      "hero": "https://impeccable.style/worlds/cards/posters-covers-sleeves-flash-scrawl-club-sleeve-hero.webp"
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "code", "toggle": false },
+  "canon": true,
+  "canonCard": {
+    "label": "The wedding-site standard",
+    "thesis": "What every wedding website template ships, executed impeccably.",
+    "palette": ["#ffffff", "#2b2b2b", "#c9a27e", "#efe4da"],
+    "materials": ["full-bleed couple photo", "script names", "soft blush and gold"],
+    "viewport": "A full-screen couple photo with script names, a countdown, detail cards and an RSVP form.",
+    "risk": "Indistinguishable from every template by design."
+  },
+  "steer": true
+}

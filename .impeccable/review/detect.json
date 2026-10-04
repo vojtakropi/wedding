@@ -1,0 +1,164 @@
+[
+  {
+    "antipattern": "low-contrast",
+    "name": "Low contrast text",
+    "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+    "severity": "warning",
+    "category": "quality",
+    "file": "C:\\Users\\Test\\Documents\\wedding\\wedding\\public\\index.html",
+    "line": 0,
+    "snippet": "4.4:1 (need 4.5:1) — text #5f7067 on #ecebe4"
+  },
+  {
+    "antipattern": "low-contrast",
+    "name": "Low contrast text",
+    "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+    "severity": "warning",
+    "category": "quality",
+    "file": "C:\\Users\\Test\\Documents\\wedding\\wedding\\public\\index.html",
+    "line": 0,
+    "snippet": "4.4:1 (need 4.5:1) — text #5f7067 on #ecebe4"
+  },
+  {
+    "antipattern": "italic-serif-display",
+    "name": "Italic serif display headline",
+    "description": "Oversized italic serif (Fraunces, Recoleta, Playfair, Newsreader-italic) as the primary hero headline reads as taste in isolation but has become the universal AI-startup landing page hero. Set roman, or move to a non-serif display face. Editorial / magazine register may legitimately want this — judge by context.",
+    "severity": "warning",
+    "category": "slop",
+    "file": "C:\\Users\\Test\\Documents\\wedding\\wedding\\public\\index.html",
+    "line": 0,
+    "snippet": "italic serif h1 (bodoni moda) at 88px \"Klára\n      a\n      Matěj\""
+  },
+  {
+    "antipattern": "italic-serif-display",
+    "name": "Italic serif display headline",
+    "description": "Oversized italic serif (Fraunces, Recoleta, Playfair, Newsreader-italic) as the primary hero headline reads as taste in isolation but has become the universal AI-startup landing page hero. Set roman, or move to a non-serif display face. Editorial / magazine register may legitimately want this — judge by context.",
+    "severity": "warning",
+    "category": "slop",
+    "file": "C:\\Users\\Test\\Documents\\wedding\\wedding\\public\\index.html",
+    "line": 0,
+    "snippet": "italic serif h2 (bodoni moda) at 54px \"Deset lét, jeden dlouhý stůl\""
+  },
+  {
+    "antipattern": "all-caps-body",
+    "name": "All-caps body text",
+    "description": "Long passages in uppercase are hard to read. We recognize words by shape (ascenders and descenders), which all-caps removes. Reserve uppercase for short labels and headings.",
+    "severity": "warning",
+    "category": "quality",
+    "file": "C:\\Users\\Test\\Documents\\wedding\\wedding\\public\\index.html",
+    "line": 0,
+    "snippet": "text-transform: uppercase on 34 chars of body text"
+  },
+  {
+    "antipattern": "cramped-padding",
+    "name": "Cramped padding",
+    "description": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the space between the rendered text and the border box is too small for the font size, and (2) a wrapper whose children's text lands flush against a visible boundary (border, outline, or non-transparent background) with nothing to inset it. Add at least 8px (ideally 12–16px) of space inside bordered, outlined, or colored containers.",
+    "severity": "warning",
+    "category": "quality",
+    "file": "C:\\Users\\Test\\Documents\\wedding\\wedding\\public\\index.html",
+    "line": 0,
+    "snippet": "<section> \"panel\": children flush against bg on top/left (no inset)"
+  },
+  {
+    "antipattern": "cramped-padding",
+    "name": "Cramped padding",
+    "description": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the space between the rendered text and the border box is too small for the font size, and (2) a wrapper whose children's text lands flush against a visible boundary (border, outline, or non-transparent background) with nothing to inset it. Add at least 8px (ideally 12–16px) of space inside bordered, outlined, or colored containers.",
+    "severity": "warning",
+    "category": "quality",
+    "file": "C:\\Users\\Test\\Documents\\wedding\\wedding\\public\\index.html",
+    "line": 0,
+    "snippet": "<div> \"col\": children flush against border-top/left on left (no inset)"
+  },
+  {
+    "antipattern": "cramped-padding",
+    "name": "Cramped padding",
+    "description": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the space between the rendered text and the border box is too small for the font size, and (2) a wrapper whose children's text lands flush against a visible boundary (border, outline, or non-transparent background) with nothing to inset it. Add at least 8px (ideally 12–16px) of space inside bordered, outlined, or colored containers.",
+    "severity": "warning",
+    "category": "quality",
+    "file": "C:\\Users\\Test\\Documents\\wedding\\wedding\\public\\index.html",
+    "line": 0,
+    "snippet": "<div> \"col\": children flush against border-top/left on left (no inset)"
+  },
+  {
+    "antipattern": "cramped-padding",
+    "name": "Cramped padding",
+    "description": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the space between the rendered text and the border box is too small for the font size, and (2) a wrapper whose children's text lands flush against a visible boundary (border, outline, or non-transparent background) with nothing to inset it. Add at least 8px (ideally 12–16px) of space inside bordered, outlined, or colored containers.",
+    "severity": "warning",
+    "category": "quality",
+    "file": "C:\\Users\\Test\\Documents\\wedding\\wedding\\public\\index.html",
+    "line": 0,
+    "snippet": "<div> \"qas\": children flush against border-top on top (no inset)"
+  },
+  {
+    "antipattern": "cramped-padding",
+    "name": "Cramped padding",
+    "description": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the space between the rendered text and the border box is too small for the font size, and (2) a wrapper whose children's text lands flush against a visible boundary (border, outline, or non-transparent background) with nothing to inset it. Add at least 8px (ideally 12–16px) of space inside bordered, outlined, or colored containers.",
+    "severity": "warning",
+    "category": "quality",
+    "file": "C:\\Users\\Test\\Documents\\wedding\\wedding\\public\\index.html",
+    "line": 0,
+    "snippet": "<section> \"panel\": children flush against bg on right/bottom/left (no inset)"
+  },
+  {
+    "antipattern": "all-caps-body",
+    "name": "All-caps body text",
+    "description": "Long passages in uppercase are hard to read. We recognize words by shape (ascenders and descenders), which all-caps removes. Reserve uppercase for short labels and headings.",
+    "severity": "warning",
+    "category": "quality",
+    "file": "C:\\Users\\Test\\Documents\\wedding\\wedding\\public\\index.html",
+    "line": 0,
+    "snippet": "text-transform: uppercase on 40 chars of body text"
+  },
+  {
+    "antipattern": "clipped-overflow-container",
+    "name": "Positioned child clipped by overflow container",
+    "description": "A clipping container (overflow hidden or clip) wrapping an absolutely-positioned child cuts off tooltips, menus, and popovers that need to escape. Let the overflow be visible, or move the positioned layer out of the clip.",
+    "severity": "warning",
+    "category": "quality",
+    "file": "C:\\Users\\Test\\Documents\\wedding\\wedding\\public\\index.html",
+    "line": 0,
+    "snippet": "html clips a positioned child"
+  },
+  {
+    "antipattern": "clipped-overflow-container",
+    "name": "Positioned child clipped by overflow container",
+    "description": "A clipping container (overflow hidden or clip) wrapping an absolutely-positioned child cuts off tooltips, menus, and popovers that need to escape. Let the overflow be visible, or move the positioned layer out of the clip.",
+    "severity": "warning",
+    "category": "quality",
+    "file": "C:\\Users\\Test\\Documents\\wedding\\wedding\\public\\index.html",
+    "line": 0,
+    "snippet": "body clips a positioned child"
+  },
+  {
+    "antipattern": "nested-cards",
+    "name": "Nested cards",
+    "description": "Cards inside cards create visual noise and excessive depth. Flatten the hierarchy — use spacing, typography, and dividers instead of nesting containers.",
+    "severity": "warning",
+    "category": "slop",
+    "file": "C:\\Users\\Test\\Documents\\wedding\\wedding\\public\\index.html",
+    "line": 0,
+    "snippet": "Card inside card (aside)"
+  },
+  {
+    "antipattern": "codex-grid-background",
+    "name": "Decorative grid-line background",
+    "description": "A decorative grid or line-field background drawn with hairline linear-gradient layers tiled by a fixed pixel cell is a recurring generated-UI signature. Reserve grid overlays for actual canvas, map, blueprint, or measurement surfaces; elsewhere use product structure or a plain surface.",
+    "severity": "advisory",
+    "category": "slop",
+    "file": "C:\\Users\\Test\\Documents\\wedding\\wedding\\public\\index.html",
+    "line": 0,
+    "snippet": "two-axis grid-line gradient background",
+    "advisory": true
+  },
+  {
+    "antipattern": "codex-grid-background",
+    "name": "Decorative grid-line background",
+    "description": "A decorative grid or line-field background drawn with hairline linear-gradient layers tiled by a fixed pixel cell is a recurring generated-UI signature. Reserve grid overlays for actual canvas, map, blueprint, or measurement surfaces; elsewhere use product structure or a plain surface.",
+    "severity": "advisory",
+    "category": "slop",
+    "file": "C:\\Users\\Test\\Documents\\wedding\\wedding\\public\\assets\\css\\styles.css",
+    "line": 366,
+    "snippet": "two-axis grid-line gradient background",
+    "advisory": true
+  }
+]
