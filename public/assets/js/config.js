@@ -8,7 +8,7 @@
  * maxGuests:    nejvyšší počet hostů v jednom formuláři (musí sedět s MAX_GUESTS v Code.gs).
  */
 window.WEDDING_CONFIG = {
-  rsvpEndpoint: "",
+  rsvpEndpoint: "https://script.google.com/macros/s/AKfycbw37d0tLNICy3Sdtjs4yJNdHDbSlTNJy-fCa-vggtoiabGFbwSOmrPoZny2agVXZNlH/exec",
   maxGuests: 6,
   contactEmail: "svatba@example.com",
 };
