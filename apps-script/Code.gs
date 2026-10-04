@@ -14,6 +14,10 @@
  * rovnou filtrovat a sčítat. List "Přehled" počítá součty automaticky.
  */
 
+// Tabulka, kam se odpovědi zapisují (ID z adresy docs.google.com/spreadsheets/d/<ID>/edit).
+// Díky tomu funguje skript vložený přímo do tabulky i samostatný projekt Apps Script.
+const SPREADSHEET_ID = '1WrF2YSgkZgrkZVT27Fm5Trc4ZuIZhV2wE8zL6bHYLLQ';
+
 const SHEET_NAME = 'Odpovědi';
 const SUMMARY_NAME = 'Přehled';
 
@@ -96,7 +100,7 @@ function doPost(e) {
 
 /** Spusťte jednou z editoru: vytvoří listy "Odpovědi" a "Přehled". */
 function setup() {
-  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const ss = getSpreadsheet_();
   const sheet = getSheet_();
   sheet.getRange(1, 1, 1, HEADERS.length).setValues([HEADERS])
     .setFontWeight('bold').setBackground('#17203d').setFontColor('#f4f4f0');
@@ -184,8 +188,12 @@ function safeCell_(v) {
   return v;
 }
 
+function getSpreadsheet_() {
+  return SPREADSHEET_ID ? SpreadsheetApp.openById(SPREADSHEET_ID) : SpreadsheetApp.getActiveSpreadsheet();
+}
+
 function getSheet_() {
-  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const ss = getSpreadsheet_();
   let sheet = ss.getSheetByName(SHEET_NAME);
   if (!sheet) {
     sheet = ss.insertSheet(SHEET_NAME, 0);

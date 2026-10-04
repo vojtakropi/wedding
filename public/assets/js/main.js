@@ -453,7 +453,7 @@
       } catch (err) {
         console.error("[RSVP] send failed:", err);
         const mail = `mailto:${config.contactEmail}?subject=${encodeURIComponent("Odpověď na pozvánku: " + data.name)}`;
-        showStatus(`Odpověď se teď nepodařilo odeslat. Zkontrolujte prosím připojení a zkuste to znovu, nebo nám napište na <a href="${mail}">${config.contactEmail}</a>.`);
+        showStatus(`Odpověď se teď nepodařilo odeslat. Zkontrolujte prosím připojení a zkuste to znovu, nebo nám napište na <a href="${mail}">${config.contactEmail}</a>.`);
         setSending(false);
         return;
       }

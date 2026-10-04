@@ -4,3 +4,7 @@ node_modules/
 .DS_Store
 Thumbs.db
 *.log
+.impeccable/review/
+.impeccable/questions/
+.impeccable/decision-direction.json
+.impeccable/brief-body.md

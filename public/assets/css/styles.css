@@ -141,7 +141,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .bar__links a { text-decoration: none; color: var(--on-envelope-2); font-size: 1rem; padding-block: 0.4rem; }
 .bar__links a:hover { color: var(--on-envelope); text-decoration: underline; }
 .bar__reply {
-  display: inline-flex; align-items: center; min-height: 40px; padding: 0.35rem 1rem;
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0.35rem 1rem;
   border-radius: 4px; background: var(--paper); color: var(--ink);
   font-weight: 700; font-size: 1rem; text-decoration: none; white-space: nowrap;
   transition: transform 160ms var(--ease-out), background-color 160ms ease;
@@ -172,6 +172,10 @@ button, input, select, textarea { font: inherit; color: inherit; }
 @media (hover: hover) and (pointer: fine) {
   .bar__reply:hover { background: #ffffff; }
 }
+
+/* Current page: underlined like a ruled entry, never a pill. */
+.bar__links a[aria-current="page"] { color: var(--on-envelope); text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 0.4em; }
+.menu a[aria-current="page"] { text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 0.22em; }
 
 /* ---------- The card -------------------------------------------------------- */
 .card {
@@ -656,6 +660,18 @@ input:focus, textarea:focus, select:focus {
 .sent__summary li { display: grid; grid-template-columns: minmax(7rem, auto) 1fr; gap: 1rem; font-size: 1.02rem; }
 .sent__summary li span:first-child { color: var(--ink-3); }
 @media (max-width: 420px) { .sent__summary li { grid-template-columns: 1fr; gap: 0; } }
+
+/* ---------- Enclosure cards (Program, Doprava, Dotazy) ---------------------- */
+/* Same stock as the announcement, cut a little narrower, like the inserts in a stationery suite. */
+.card--insert { width: min(100% - 1.25rem, 42rem); }
+/* The enclosure card is too narrow for three travel columns: set them one under another. */
+.card--insert .columns { grid-template-columns: 1fr; }
+.card--insert .col, .card--insert .col + .col { padding: 1.25rem 0 0; border-left: 0; }
+.card--insert .col + .col { border-top: 1px solid var(--rule-soft); margin-top: 1.25rem; }
+.card--insert .col p { max-width: 52ch; }
+.panel--first { padding-top: clamp(2.5rem, 7vw, 4.5rem); }
+.panel--lost { min-height: 50vh; display: grid; align-content: center; justify-items: start; gap: 1.25rem; }
+.send--inline { display: inline-flex; width: auto; min-height: 52px; padding-inline: 1.5rem; text-decoration: none; margin-top: 0.75rem; }
 
 /* ---------- Back of the card ---------------------------------------------------- */
 .panel--back { text-align: center; display: grid; gap: 0.6rem; justify-items: center; }

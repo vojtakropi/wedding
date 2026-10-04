@@ -6,7 +6,11 @@ Všechna jména, data, místa a fotky jsou **ukázkové**. Viz [Přizpůsobení]
 
 ```
 public/                      vše, co se nasazuje
-  index.html                 stránka
+  index.html                 hlavní strana: oznámení, náš příběh, odpovědní lístek
+  program/index.html         program víkendu
+  doprava/index.html         místo, doprava, ubytování
+  dotazy/index.html          dobré vědět (časté dotazy)
+  404.html                   stránka pro neexistující adresu
   assets/css/styles.css      design (barvy, písma, zaoblení) na začátku souboru
   assets/js/config.js        sem patří adresa pro odesílání odpovědí
   assets/js/main.js          odpočet, menu, galerie, logika formuláře
@@ -33,7 +37,7 @@ Dokud nevyplníte adresu pro odesílání, formulář běží v **ukázkovém re
 
 ## Propojení formuláře s Google Tabulkami
 
-1. Vytvořte novou Google Tabulku (např. „Svatba, odpovědi“).
+1. Otevřete svou tabulku: https://docs.google.com/spreadsheets/d/1WrF2YSgkZgrkZVT27Fm5Trc4ZuIZhV2wE8zL6bHYLLQ/edit (její ID je už v `Code.gs` jako `SPREADSHEET_ID`; pro jinou tabulku ho tam přepište).
 2. V tabulce otevřete **Rozšíření → Apps Script**. Smažte ukázkový kód, vložte obsah `apps-script/Code.gs` a uložte.
 3. V nabídce funkcí vyberte **`setup`** a klikněte na **Spustit**. Potvrďte oprávnění (je to váš vlastní skript). Vzniknou dva listy:
    - **Odpovědi**: jeden řádek na hosta: jméno, věk, stravovací omezení, poznámky k alergiím, části víkendu, písnička, vzkaz.
@@ -88,10 +92,14 @@ Stránka je nastavená jako `noindex` (meta značka, hlavička `X-Robots-Tag` a 
 
 | Co | Kde |
 |---|---|
-| Jména, datum, místo, program, doprava, dotazy | `public/index.html` |
+| Jména, datum, příběh, odpovědní lístek | `public/index.html` |
+| Program víkendu | `public/program/index.html` |
+| Místo, doprava, ubytování, rezervační kód | `public/doprava/index.html` |
+| Časté dotazy | `public/dotazy/index.html` |
+| Odkazy v menu | lišta `<header class="bar">` ve všech čtyřech stránkách (+ `404.html`) |
 | Pozvánka do kalendáře | `public/assets/klara-matej-wedding.ics` (časy v UTC) |
-| Kontaktní e-mail | `index.html` (dvě místa) + `config.js` |
-| Rezervační kód | `data-copy="KLARAMATEJ27"` v `index.html` |
+| Kontaktní e-mail | patička všech stránek, `dotazy/index.html` + `config.js` |
+| Rezervační kód | `data-copy="KLARAMATEJ27"` v `doprava/index.html` |
 | Termín pro odpověď | `index.html` (přední strana + úvod odpovědního lístku) |
 | Části víkendu na výběr | volby v `index.html` **a** `EVENT_OPTIONS` v `Code.gs` |
 | Stravovací omezení | volby v `#guest-template` **a** `DIETARY_OPTIONS` v `Code.gs` |

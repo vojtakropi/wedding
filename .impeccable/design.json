@@ -1,0 +1,731 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-04T15:09:14+00:00",
+  "title": "Design System: Klára & Matěj, svatební oznámení",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "primary",
+        "displayName": "Rosemary Ink",
+        "canonical": "oklch(32.6% 0.041 167.4)",
+        "tonalRamp": [
+          "#000f09",
+          "#0e2b21",
+          "#2c493e",
+          "#4b695d",
+          "#6b8a7d",
+          "#8daea0",
+          "#b1d2c4",
+          "#d6f8e9"
+        ]
+      },
+      "ink-press": {
+        "role": "primary",
+        "displayName": "Pressed Ink",
+        "canonical": "oklch(28.5% 0.037 166.1)",
+        "tonalRamp": [
+          "#000f08",
+          "#122b21",
+          "#2f483e",
+          "#4e685c",
+          "#6e8a7d",
+          "#90ada0",
+          "#b4d1c4",
+          "#d9f7e9"
+        ]
+      },
+      "envelope": {
+        "role": "primary",
+        "displayName": "Envelope Green",
+        "canonical": "oklch(32.6% 0.041 167.4)",
+        "tonalRamp": [
+          "#000f09",
+          "#0e2b21",
+          "#2c493e",
+          "#4b695d",
+          "#6b8a7d",
+          "#8daea0",
+          "#b1d2c4",
+          "#d6f8e9"
+        ]
+      },
+      "envelope-deep": {
+        "role": "primary",
+        "displayName": "Envelope Shadow",
+        "canonical": "oklch(27.5% 0.034 166.8)",
+        "tonalRamp": [
+          "#000f08",
+          "#132a21",
+          "#30483e",
+          "#4f685d",
+          "#70897e",
+          "#92aca0",
+          "#b5d1c4",
+          "#daf6ea"
+        ]
+      },
+      "on-envelope": {
+        "role": "neutral",
+        "displayName": "On-Envelope Cream",
+        "canonical": "oklch(95.1% 0.012 96.4)",
+        "tonalRamp": [
+          "#0d0b06",
+          "#27251e",
+          "#44423b",
+          "#63615a",
+          "#84827a",
+          "#a7a59d",
+          "#cbc9c1",
+          "#f1efe6"
+        ]
+      },
+      "on-envelope-2": {
+        "role": "neutral",
+        "displayName": "On-Envelope Cream, muted",
+        "canonical": "oklch(85.7% 0.015 151.7)",
+        "tonalRamp": [
+          "#070d08",
+          "#202721",
+          "#3c443e",
+          "#5b645d",
+          "#7c857e",
+          "#9ea8a0",
+          "#c2ccc4",
+          "#e7f2e9"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Cotton Stock",
+        "canonical": "oklch(98.4% 0.007 97.3)",
+        "tonalRamp": [
+          "#0c0b08",
+          "#262521",
+          "#43423e",
+          "#62615d",
+          "#83827e",
+          "#a6a5a0",
+          "#cac9c4",
+          "#efeeea"
+        ]
+      },
+      "paper-fold": {
+        "role": "neutral",
+        "displayName": "Folded Stock",
+        "canonical": "oklch(96.6% 0.011 95.2)",
+        "tonalRamp": [
+          "#0d0b06",
+          "#27251f",
+          "#44423c",
+          "#63615a",
+          "#84827b",
+          "#a7a59e",
+          "#cbc9c1",
+          "#f1efe7"
+        ]
+      },
+      "paper-insert": {
+        "role": "neutral",
+        "displayName": "Sage Insert",
+        "canonical": "oklch(94.0% 0.011 141.3)",
+        "tonalRamp": [
+          "#090c08",
+          "#222621",
+          "#3f443e",
+          "#5e635d",
+          "#7f847e",
+          "#a1a7a0",
+          "#c5cbc4",
+          "#eaf0e9"
+        ]
+      },
+      "print-white": {
+        "role": "neutral",
+        "displayName": "Print White",
+        "canonical": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Secondary Ink",
+        "canonical": "oklch(44.3% 0.030 164.4)",
+        "tonalRamp": [
+          "#000f08",
+          "#162a21",
+          "#33473e",
+          "#52675d",
+          "#72887e",
+          "#94aba0",
+          "#b8d0c4",
+          "#ddf5e9"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Hint Ink",
+        "canonical": "oklch(52.8% 0.025 162.4)",
+        "tonalRamp": [
+          "#030e08",
+          "#1a2921",
+          "#36463e",
+          "#55665d",
+          "#76877e",
+          "#98aaa0",
+          "#bccec4",
+          "#e1f4ea"
+        ]
+      },
+      "ink-wash": {
+        "role": "neutral",
+        "displayName": "Ink Wash",
+        "canonical": "oklch(32.6% 0.041 167.4 / 0.055)",
+        "tonalRamp": [
+          "#000f09",
+          "#0e2b21",
+          "#2c493e",
+          "#4b695d",
+          "#6b8a7d",
+          "#8daea0",
+          "#b1d2c4",
+          "#d6f8e9"
+        ]
+      },
+      "ink-wash-2": {
+        "role": "neutral",
+        "displayName": "Ink Wash, strong",
+        "canonical": "oklch(32.6% 0.041 167.4 / 0.1)",
+        "tonalRamp": [
+          "#000f09",
+          "#0e2b21",
+          "#2c493e",
+          "#4b695d",
+          "#6b8a7d",
+          "#8daea0",
+          "#b1d2c4",
+          "#d6f8e9"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Rule",
+        "canonical": "oklch(32.6% 0.041 167.4 / 0.24)",
+        "tonalRamp": [
+          "#000f09",
+          "#0e2b21",
+          "#2c493e",
+          "#4b695d",
+          "#6b8a7d",
+          "#8daea0",
+          "#b1d2c4",
+          "#d6f8e9"
+        ]
+      },
+      "rule-soft": {
+        "role": "neutral",
+        "displayName": "Rule, soft",
+        "canonical": "oklch(32.6% 0.041 167.4 / 0.13)",
+        "tonalRamp": [
+          "#000f09",
+          "#0e2b21",
+          "#2c493e",
+          "#4b695d",
+          "#6b8a7d",
+          "#8daea0",
+          "#b1d2c4",
+          "#d6f8e9"
+        ]
+      },
+      "danger": {
+        "role": "error",
+        "displayName": "Correction Red",
+        "canonical": "oklch(47.0% 0.159 22.6)",
+        "tonalRamp": [
+          "#1f0002",
+          "#4d000a",
+          "#800017",
+          "#a92e34",
+          "#d05354",
+          "#f97876",
+          "#feb3af",
+          "#ffe8e7"
+        ]
+      },
+      "envelope-night": {
+        "role": "primary",
+        "displayName": "Envelope Green, night",
+        "canonical": "oklch(25.0% 0.029 168.5)",
+        "tonalRamp": [
+          "#010f09",
+          "#172a22",
+          "#33473f",
+          "#52675e",
+          "#72887f",
+          "#95aba2",
+          "#b8cfc6",
+          "#ddf5eb"
+        ],
+        "mode": "dark (prefers-color-scheme: dark)"
+      },
+      "envelope-deep-night": {
+        "role": "primary",
+        "displayName": "Envelope Shadow, night",
+        "canonical": "oklch(20.7% 0.022 169.5)",
+        "tonalRamp": [
+          "#030e0a",
+          "#1a2923",
+          "#374640",
+          "#55655f",
+          "#768780",
+          "#98aaa3",
+          "#bccec7",
+          "#e1f4ec"
+        ],
+        "mode": "dark (prefers-color-scheme: dark)"
+      },
+      "paper-night": {
+        "role": "neutral",
+        "displayName": "Cotton Stock, night",
+        "canonical": "oklch(93.9% 0.009 100.0)",
+        "tonalRamp": [
+          "#0c0b07",
+          "#262520",
+          "#43423d",
+          "#62615b",
+          "#83827c",
+          "#a6a59f",
+          "#cac9c3",
+          "#f0efe8"
+        ],
+        "mode": "dark (prefers-color-scheme: dark)"
+      },
+      "paper-fold-night": {
+        "role": "neutral",
+        "displayName": "Folded Stock, night",
+        "canonical": "oklch(91.5% 0.011 95.2)",
+        "tonalRamp": [
+          "#0d0b06",
+          "#27251f",
+          "#44423c",
+          "#63615a",
+          "#84827b",
+          "#a7a59d",
+          "#cbc9c1",
+          "#f1efe6"
+        ],
+        "mode": "dark (prefers-color-scheme: dark)"
+      },
+      "paper-insert-night": {
+        "role": "neutral",
+        "displayName": "Sage Insert, night",
+        "canonical": "oklch(89.8% 0.014 145.5)",
+        "tonalRamp": [
+          "#080d08",
+          "#212721",
+          "#3e443e",
+          "#5c635d",
+          "#7d857d",
+          "#a0a7a0",
+          "#c4ccc4",
+          "#e9f1e9"
+        ],
+        "mode": "dark (prefers-color-scheme: dark)"
+      },
+      "ink-3-night": {
+        "role": "neutral",
+        "displayName": "Hint Ink, night",
+        "canonical": "oklch(48.3% 0.025 157.9)",
+        "tonalRamp": [
+          "#030e07",
+          "#1b2920",
+          "#37463d",
+          "#56665c",
+          "#76877d",
+          "#99aa9f",
+          "#bccec3",
+          "#e1f4e8"
+        ],
+        "mode": "dark (prefers-color-scheme: dark)"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display (names)",
+        "purpose": "The couple's names on the front panel, Bodoni Moda italic; always the largest type on the page."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "One per panel, Bodoni Moda roman, at most one italic accent word."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "FAQ questions, form legends, stub question, day headings, column and insert heads."
+      },
+      "formula": {
+        "displayName": "Formula",
+        "purpose": "The announcement sentence beneath the names."
+      },
+      "caps": {
+        "displayName": "Spaced Caps",
+        "purpose": "Single short uppercase lines: date, place, day labels, back meta. Tracking 0.1em at 520px and below."
+      },
+      "numeral": {
+        "displayName": "Numerals",
+        "purpose": "Programme times with lining tabular figures; key items 1.5rem."
+      },
+      "stamp": {
+        "displayName": "Stamp",
+        "purpose": "The \"Odesláno\" rubber stamp; date beneath at 0.72rem."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All reading text in Atkinson Hyperlegible Next at 18px; measure 36-58ch per element."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Field labels and diet legends."
+      },
+      "hint": {
+        "displayName": "Hint",
+        "purpose": "Field hints and \"nepovinné\" in Hint Ink; errors same size at 700 in Correction Red."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Send button label; other buttons 1-1.125rem at the same weight."
+      }
+    },
+    "shadows": [
+      {
+        "name": "card-on-envelope",
+        "value": "0 1px 1px rgb(0 0 0 / 0.22), 0 3px 6px -2px rgb(0 0 0 / 0.25), 0 30px 60px -24px rgb(0 0 0 / 0.55)",
+        "purpose": "The card sheet lying on the envelope."
+      },
+      {
+        "name": "tipped-in-print",
+        "value": "0 1px 1px rgb(0 0 0 / 0.16), 0 10px 22px -12px rgb(0 0 0 / 0.45)",
+        "purpose": "Photographs mounted on the card."
+      },
+      {
+        "name": "insert-card",
+        "value": "0 1px 1px rgb(0 0 0 / 0.14), 0 14px 28px -16px rgb(0 0 0 / 0.5)",
+        "purpose": "The loose insert tucked into the fold."
+      },
+      {
+        "name": "bar-stuck",
+        "value": "0 1px 0 rgb(0 0 0 / 0.25), 0 8px 24px -12px rgb(0 0 0 / 0.5)",
+        "purpose": "Sticky bar once the card scrolls under it."
+      },
+      {
+        "name": "menu-sheet",
+        "value": "0 16px 32px -16px rgb(0 0 0 / 0.6)",
+        "purpose": "Open mobile menu."
+      },
+      {
+        "name": "send-bevel",
+        "value": "0 1px 0 rgb(0 0 0 / 0.25), inset 0 1px 0 rgb(255 255 255 / 0.08)",
+        "purpose": "Hairline press edge on the solid-ink send button; not a lift."
+      },
+      {
+        "name": "focus-ring-fill-in",
+        "value": "0 0 0 2px var(--paper), 0 0 0 4px var(--ink)",
+        "purpose": "Focus ring on fill-in boxes (paper gap plus ink ring)."
+      },
+      {
+        "name": "fold-crease",
+        "value": "linear-gradient(to bottom, rgb(30 59 48 / 0.14), rgb(30 59 48 / 0.04) 6px, rgb(30 59 48 / 0) 30px) 100% 30px, linear-gradient(rgb(255 255 255 / 0.95), rgb(255 255 255 / 0.95)) 100% 1px",
+        "purpose": "Background valley plus highlight at the top of every panel after the first."
+      },
+      {
+        "name": "letterpress-text",
+        "value": "0 1px 0 rgb(255 255 255 / 0.75), 0 -0.5px 0 rgb(30 59 48 / 0.18)",
+        "purpose": "text-shadow on large Bodoni (headlines, names, back names, stub question)."
+      },
+      {
+        "name": "blind-emboss-text",
+        "value": "0 1.5px 0 rgb(255 255 255 / 1), 0 -1px 0 rgb(30 59 48 / 0.38), 0 -1px 2px rgb(30 59 48 / 0.2)",
+        "purpose": "text-shadow on the paper-coloured K&M monogram only."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "purpose": "Presses, ticks, reveals, stamp press."
+      },
+      {
+        "name": "ease-in-out",
+        "value": "cubic-bezier(0.77, 0, 0.175, 1)",
+        "purpose": "The tear-off only."
+      },
+      {
+        "name": "press",
+        "value": "transform: scale(0.97) 160ms ease-out",
+        "purpose": "Send, bar reply, code button, add guest on :active."
+      },
+      {
+        "name": "tick-press",
+        "value": "transform: scale(0.92) 140ms ease-out",
+        "purpose": "Tick box on :active."
+      },
+      {
+        "name": "tick-draw",
+        "value": "stroke-dashoffset 22 -> 0, 200ms ease-out; box fill 160ms ease",
+        "purpose": "Checking a printed tick box."
+      },
+      {
+        "name": "fade",
+        "value": "160ms ease",
+        "purpose": "Colour, background and underline changes."
+      },
+      {
+        "name": "bar-fill",
+        "value": "200ms ease",
+        "purpose": "Bar background and shadow when it becomes stuck."
+      },
+      {
+        "name": "faq-icon",
+        "value": "rotate(45deg) 200ms ease-out",
+        "purpose": "Plus turns into a cross when a FAQ row opens."
+      },
+      {
+        "name": "settle-in",
+        "value": "opacity 0 + translateY(-4px) -> rest, 240ms ease-out",
+        "purpose": "FAQ answer on open (motion allowed only)."
+      },
+      {
+        "name": "reveal",
+        "value": "opacity 0 + translateY(6px) -> rest via @starting-style; 240ms (attending section), 220ms (guest)",
+        "purpose": "Conditional section and added guests (motion allowed only)."
+      },
+      {
+        "name": "send-arrow",
+        "value": "translateX(3px) 200ms ease-out",
+        "purpose": "Send arrow on hover, fine pointers only."
+      },
+      {
+        "name": "tear-off",
+        "value": "WAAPI 640ms cubic-bezier(0.77, 0, 0.175, 1), origin 14% 0: 0% none -> 22% translateY(6px) rotate(-0.8deg) -> 100% translateY(72px) rotate(2.6deg) opacity 0 blur(2px)",
+        "purpose": "The reply slip tears away on successful send. Reduced motion: 160ms opacity fade."
+      },
+      {
+        "name": "stamp-press",
+        "value": "WAAPI 280ms delay 60ms cubic-bezier(0.23, 1, 0.32, 1): rotate(-7deg) scale(1.45) opacity 0 -> 70% scale(0.97) opacity 0.92 -> scale(1) opacity 0.88",
+        "purpose": "The Odesláno stamp lands. Reduced motion: 160ms opacity 0 -> 0.88."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "nav-collapse",
+        "value": "max-width: 760px"
+      },
+      {
+        "name": "columns-stack",
+        "value": "max-width: 680px"
+      },
+      {
+        "name": "compact",
+        "value": "max-width: 520px"
+      },
+      {
+        "name": "summary-stack",
+        "value": "max-width: 420px"
+      },
+      {
+        "name": "short-desktop",
+        "value": "(min-width: 761px) and (max-height: 860px)"
+      }
+    ],
+    "textures": [
+      {
+        "name": "cotton",
+        "file": "public/assets/img/texture/cotton.png",
+        "size": "320x320 gray+alpha",
+        "application": "Tiled 320px over paper, paper-fold (under crease gradients) and paper-insert."
+      },
+      {
+        "name": "envelope",
+        "file": "public/assets/img/texture/envelope.png",
+        "size": "320x320 gray+alpha",
+        "application": "Tiled 320px over the envelope-green body."
+      },
+      {
+        "name": "stamp-ink",
+        "file": "public/assets/img/texture/stamp-ink.png",
+        "size": "480x200 gray+alpha",
+        "application": "mask-image stretched 100% 100% over the stamp for uneven ink."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Send Button",
+      "kind": "button",
+      "refersTo": "button-send",
+      "description": "The single solid-ink action: submits the reply slip.",
+      "html": "<button class=\"ds-send\" type=\"button\"><span>Odeslat odpověď</span><svg viewBox=\"0 0 256 256\" aria-hidden=\"true\"><path d=\"M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z\"/></svg></button>",
+      "css": ".ds-send { display: flex; align-items: center; justify-content: center; gap: 0.6rem; width: 100%; min-height: 58px; padding: 0.85rem 1.5rem; border: 0; border-radius: 4px; background: var(--ink, #1e3b30); color: var(--paper, #fbfaf5); font-family: var(--sans, \"Atkinson Hyperlegible Next\", \"Segoe UI\", system-ui, sans-serif); font-size: 1.15rem; font-weight: 700; letter-spacing: 0.01em; cursor: pointer; box-shadow: 0 1px 0 rgb(0 0 0 / 0.25), inset 0 1px 0 rgb(255 255 255 / 0.08); transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1), background-color 160ms ease; } .ds-send svg { width: 1.15em; height: 1.15em; fill: currentColor; transition: transform 200ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-send:hover { background: var(--ink-press, #173026); } .ds-send:hover svg { transform: translateX(3px); } .ds-send:active { transform: scale(0.97); } .ds-send:focus-visible { outline: 2px solid var(--ink, #1e3b30); outline-offset: 3px; }"
+    },
+    {
+      "name": "Bar Reply Button",
+      "kind": "nav",
+      "refersTo": "button-bar-reply",
+      "description": "Envelope-green bar with the Bodoni monogram and a paper-coloured reply button.",
+      "html": "<div class=\"ds-bar\"><span class=\"ds-bar__mark\">K <em>&amp;</em> M</span><a class=\"ds-bar__link\" href=\"#weekend\">Program</a><a class=\"ds-bar__reply\" href=\"#rsvp\">Odpovědět</a></div>",
+      "css": ".ds-bar { display: flex; align-items: center; gap: 1.75rem; height: 60px; padding: 0 1rem; background: var(--envelope-deep, #162d24); color: var(--on-envelope, #f1efe6); } .ds-bar__mark { font-family: var(--serif, \"Bodoni Moda\", Didot, \"Bodoni 72\", \"Times New Roman\", serif); font-size: 1.35rem; letter-spacing: 0.04em; } .ds-bar__mark em { font-weight: 400; } .ds-bar__link { margin-left: auto; padding-block: 0.4rem; color: var(--on-envelope-2, #c9d3cb); font-family: var(--sans, \"Atkinson Hyperlegible Next\", \"Segoe UI\", system-ui, sans-serif); font-size: 1rem; text-decoration: none; } .ds-bar__link:hover { color: var(--on-envelope, #f1efe6); text-decoration: underline; } .ds-bar__reply { display: inline-flex; align-items: center; min-height: 40px; padding: 0.35rem 1rem; border-radius: 4px; background: var(--paper, #fbfaf5); color: var(--ink, #1e3b30); font-family: var(--sans, \"Atkinson Hyperlegible Next\", \"Segoe UI\", system-ui, sans-serif); font-weight: 700; font-size: 1rem; text-decoration: none; transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1), background-color 160ms ease; } .ds-bar__reply:hover { background: #ffffff; } .ds-bar__reply:active { transform: scale(0.97); } .ds-bar a:focus-visible { outline: 2px solid var(--on-envelope, #f1efe6); outline-offset: 3px; border-radius: 3px; }"
+    },
+    {
+      "name": "Printed Tick Box",
+      "kind": "input",
+      "refersTo": "tick-box",
+      "description": "Checkbox printed as a reply-card box: empty is an outline, chosen fills with ink and the tick draws in.",
+      "html": "<label class=\"ds-tick\"><input type=\"checkbox\" checked><span class=\"ds-tick__box\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12.5l4.2 4.2L19 7\"/></svg></span><span>Sobotní svatba</span></label><label class=\"ds-tick\"><input type=\"checkbox\"><span class=\"ds-tick__box\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12.5l4.2 4.2L19 7\"/></svg></span><span>Nedělní brunch</span></label>",
+      "css": ".ds-tick { position: relative; display: inline-flex; align-items: flex-start; gap: 0.75rem; min-height: 44px; padding-block: 0.45rem; margin-right: 1.5rem; cursor: pointer; font-family: var(--sans, \"Atkinson Hyperlegible Next\", \"Segoe UI\", system-ui, sans-serif); font-size: 1.125rem; color: var(--ink, #1e3b30); } .ds-tick input { position: absolute; inset: 0; opacity: 0; margin: 0; cursor: pointer; } .ds-tick__box { flex: none; width: 1.6rem; height: 1.6rem; border: 1.5px solid var(--ink, #1e3b30); border-radius: 2px; background: var(--paper, #fbfaf5); display: grid; place-items: center; transition: background-color 160ms ease, transform 140ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-tick__box svg { width: 1.15rem; height: 1.15rem; fill: none; stroke: var(--paper, #fbfaf5); stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; } .ds-tick__box path { stroke-dasharray: 22; stroke-dashoffset: 22; transition: stroke-dashoffset 200ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-tick input:checked + .ds-tick__box { background: var(--ink, #1e3b30); } .ds-tick input:checked + .ds-tick__box path { stroke-dashoffset: 0; } .ds-tick:hover input:not(:checked) + .ds-tick__box { background: var(--ink-wash-2, rgb(30 59 48 / 0.1)); } .ds-tick:active .ds-tick__box { transform: scale(0.92); } .ds-tick input:focus-visible + .ds-tick__box { outline: 2px solid var(--ink, #1e3b30); outline-offset: 3px; } @media (prefers-reduced-motion: reduce) { .ds-tick__box path { transition: none; } }"
+    },
+    {
+      "name": "Tick Choice",
+      "kind": "input",
+      "refersTo": "tick-choice",
+      "description": "Large printed radio panel for the attendance answer; chosen thickens the ink outline.",
+      "html": "<div class=\"ds-choices\"><label class=\"ds-choice\"><input type=\"radio\" name=\"ds-att\" checked><span class=\"ds-choice__box\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12.5l4.2 4.2L19 7\"/></svg></span><span class=\"ds-choice__text\"><strong>S radostí přijedu</strong><span>Počítejte se mnou</span></span></label><label class=\"ds-choice\"><input type=\"radio\" name=\"ds-att\"><span class=\"ds-choice__box\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12.5l4.2 4.2L19 7\"/></svg></span><span class=\"ds-choice__text\"><strong>Bohužel nemůžu</strong><span>Budu slavit na dálku</span></span></label></div>",
+      "css": ".ds-choices { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; } .ds-choice { position: relative; display: flex; align-items: flex-start; gap: 0.75rem; min-height: 44px; padding: 1rem 1rem 1.05rem; border-radius: 2px; box-shadow: inset 0 0 0 1px var(--ink, #1e3b30); cursor: pointer; font-family: var(--sans, \"Atkinson Hyperlegible Next\", \"Segoe UI\", system-ui, sans-serif); color: var(--ink, #1e3b30); transition: box-shadow 160ms ease; } .ds-choice:has(input:checked) { box-shadow: inset 0 0 0 2px var(--ink, #1e3b30); } .ds-choice input { position: absolute; inset: 0; opacity: 0; margin: 0; cursor: pointer; } .ds-choice__box { flex: none; width: 1.6rem; height: 1.6rem; border: 1.5px solid var(--ink, #1e3b30); border-radius: 2px; background: var(--paper, #fbfaf5); display: grid; place-items: center; transition: background-color 160ms ease; } .ds-choice__box svg { width: 1.15rem; height: 1.15rem; fill: none; stroke: var(--paper, #fbfaf5); stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; } .ds-choice__box path { stroke-dasharray: 22; stroke-dashoffset: 22; transition: stroke-dashoffset 200ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-choice input:checked + .ds-choice__box { background: var(--ink, #1e3b30); } .ds-choice input:checked + .ds-choice__box path { stroke-dashoffset: 0; } .ds-choice input:focus-visible + .ds-choice__box { outline: 2px solid var(--ink, #1e3b30); outline-offset: 3px; } .ds-choice__text { display: grid; gap: 0.1rem; } .ds-choice__text strong { font-size: 1.125rem; } .ds-choice__text span { font-size: 0.98rem; color: var(--ink-2, #44594f); }"
+    },
+    {
+      "name": "Fill-in Box",
+      "kind": "input",
+      "refersTo": "input-fill-in",
+      "description": "Text field printed as an ink-outlined fill-in box; focus adds a faint wash and a paper-gapped ink ring.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-name\">Jméno a příjmení</label><input id=\"ds-name\" type=\"text\"><p class=\"ds-field__hint\">Použijeme ho jen pro novinky ke svatbě.</p></div>",
+      "css": ".ds-field { display: grid; gap: 0.45rem; font-family: var(--sans, \"Atkinson Hyperlegible Next\", \"Segoe UI\", system-ui, sans-serif); color: var(--ink, #1e3b30); } .ds-field label { font-weight: 700; font-size: 1.02rem; } .ds-field input { width: 100%; min-height: 52px; padding: 0.75rem 0.85rem 0.6rem; border: 1.5px solid var(--ink, #1e3b30); border-radius: 2px; background: transparent; color: var(--ink, #1e3b30); font: inherit; font-size: 1.125rem; transition: background-color 160ms ease, box-shadow 160ms ease; } .ds-field input:focus { outline: none; background: var(--ink-wash, rgb(30 59 48 / 0.055)); box-shadow: 0 0 0 2px var(--paper, #fbfaf5), 0 0 0 4px var(--ink, #1e3b30); } .ds-field input[aria-invalid=\"true\"] { border-color: var(--danger, #a1262e); box-shadow: inset 0 0 0 1px var(--danger, #a1262e); } .ds-field__hint { margin: 0; font-size: 0.98rem; color: var(--ink-3, #5f7067); }"
+    },
+    {
+      "name": "Card Panel with Fold Crease and Perforation",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "The card sheet on the envelope: panels alternate stock, each fold drawn as a light valley, the slip opened by a perforation with edge notches.",
+      "html": "<div class=\"ds-env\"><div class=\"ds-card\"><section class=\"ds-panel\"><h2 class=\"ds-h2\">Program víkendu</h2><p>Tři dny, jedna vila a spousta času na setkání.</p></section><section class=\"ds-panel ds-panel--fold\"><h2 class=\"ds-h2\">Dobré vědět</h2><p>Slavnostně, ale do zahrady.</p></section><section class=\"ds-panel ds-panel--slip\"><div class=\"ds-perf\"></div><h2 class=\"ds-h2\">Odpovědní lístek</h2></section></div></div>",
+      "css": ".ds-env { padding: 1.5rem 0.625rem; background: var(--envelope, #1e3b30); } .ds-card { max-width: 46rem; margin: 0 auto; background: var(--paper, #fbfaf5); border-radius: 3px; color: var(--ink, #1e3b30); font-family: var(--sans, \"Atkinson Hyperlegible Next\", \"Segoe UI\", system-ui, sans-serif); font-size: 1.125rem; line-height: 1.6; box-shadow: 0 1px 1px rgb(0 0 0 / 0.22), 0 3px 6px -2px rgb(0 0 0 / 0.25), 0 30px 60px -24px rgb(0 0 0 / 0.55); } .ds-panel { position: relative; padding: clamp(2rem, 6vw, 3.5rem) clamp(1.25rem, 6.5vw, 4.75rem); } .ds-panel + .ds-panel { background-image: linear-gradient(to bottom, rgb(30 59 48 / 0.14), rgb(30 59 48 / 0.04) 6px, rgb(30 59 48 / 0) 30px), linear-gradient(rgb(255 255 255 / 0.95), rgb(255 255 255 / 0.95)); background-size: 100% 30px, 100% 1px; background-repeat: no-repeat; } .ds-panel--fold { background-color: var(--paper-fold, #f6f4ec); } .ds-panel--slip { background: var(--paper, #fbfaf5); } .ds-panel p { margin: 0; color: var(--ink-2, #44594f); max-width: 36ch; } .ds-h2 { margin: 0 0 1.25rem; font-family: var(--serif, \"Bodoni Moda\", Didot, \"Bodoni 72\", \"Times New Roman\", serif); font-weight: 500; font-size: clamp(2.2rem, 6.4vw, 3.4rem); line-height: 1.06; letter-spacing: -0.015em; text-shadow: 0 1px 0 rgb(255 255 255 / 0.75), 0 -0.5px 0 rgb(30 59 48 / 0.18); } .ds-perf { position: absolute; left: 0; right: 0; top: -4px; height: 8px; background-image: radial-gradient(circle at 50% 50%, var(--envelope, #1e3b30) 0 2.1px, transparent 2.6px); background-size: 11px 8px; background-repeat: repeat-x; } .ds-perf::before, .ds-perf::after { content: \"\"; position: absolute; top: -6px; width: 20px; height: 20px; border-radius: 50%; background: var(--envelope, #1e3b30); } .ds-perf::before { left: -10px; } .ds-perf::after { right: -10px; }"
+    },
+    {
+      "name": "Programme Line",
+      "kind": "custom",
+      "description": "Timetable row: Bodoni tabular time, dotted leader, event name right-aligned, note with hanging indent.",
+      "html": "<ul class=\"ds-prog\"><li><p class=\"ds-prog__line\"><time>14:45</time><span class=\"ds-prog__dots\"></span><span class=\"ds-prog__name\">Odjezd kyvadlové dopravy</span></p><p class=\"ds-prog__note\">Z Piazza Dante v Pienze.</p></li><li class=\"ds-prog--key\"><p class=\"ds-prog__line\"><time>15:30</time><span class=\"ds-prog__dots\"></span><span class=\"ds-prog__name\">Obřad</span></p><p class=\"ds-prog__note\">V olivovém háji za vilou.</p></li></ul>",
+      "css": ".ds-prog { list-style: none; margin: 0; padding: 0; color: var(--ink, #1e3b30); font-family: var(--sans, \"Atkinson Hyperlegible Next\", \"Segoe UI\", system-ui, sans-serif); font-size: 1.125rem; line-height: 1.6; } .ds-prog li { padding-top: 0.95rem; } .ds-prog p { margin: 0; } .ds-prog__line { display: flex; align-items: baseline; gap: 0.6rem; } .ds-prog__line time { flex: none; min-width: 3.6rem; font-family: var(--serif, \"Bodoni Moda\", Didot, \"Bodoni 72\", \"Times New Roman\", serif); font-size: 1.35rem; font-weight: 600; font-variant-numeric: lining-nums tabular-nums; } .ds-prog__dots { flex: 1 1 1.5rem; min-width: 1.5rem; border-bottom: 2px dotted var(--rule, rgb(30 59 48 / 0.24)); transform: translateY(-0.3em); } .ds-prog__name { flex: 0 1 auto; max-width: 70%; text-align: right; font-weight: 700; } .ds-prog--key .ds-prog__name { font-family: var(--serif, \"Bodoni Moda\", Didot, \"Bodoni 72\", \"Times New Roman\", serif); font-size: 1.5rem; font-weight: 600; line-height: 1.2; } .ds-prog__note { margin-top: 0.2rem; padding-left: 4.2rem; max-width: 52ch; font-size: 1.05rem; color: var(--ink-2, #44594f); }"
+    },
+    {
+      "name": "Tipped-in Print",
+      "kind": "custom",
+      "refersTo": "print",
+      "description": "Photograph mounted on the card with a white border, envelope-green photo corners and a slight rotation.",
+      "html": "<figure class=\"ds-print\"><div class=\"ds-print__img\" role=\"img\" aria-label=\"Fotografie\"></div></figure>",
+      "css": ".ds-print { position: relative; width: 14rem; margin: 1.5rem; padding: 0.5rem; background: #ffffff; transform: rotate(-1.6deg); box-shadow: 0 1px 1px rgb(0 0 0 / 0.16), 0 10px 22px -12px rgb(0 0 0 / 0.45); } .ds-print__img { aspect-ratio: 4 / 5; background: var(--ink-wash-2, rgb(30 59 48 / 0.1)); } .ds-print::before { content: \"\"; position: absolute; inset: -5px; pointer-events: none; opacity: 0.92; background: linear-gradient(135deg, var(--envelope, #1e3b30) 0 13px, transparent 13px) top left / 26px 26px no-repeat, linear-gradient(225deg, var(--envelope, #1e3b30) 0 13px, transparent 13px) top right / 26px 26px no-repeat, linear-gradient(45deg, var(--envelope, #1e3b30) 0 13px, transparent 13px) bottom left / 26px 26px no-repeat, linear-gradient(315deg, var(--envelope, #1e3b30) 0 13px, transparent 13px) bottom right / 26px 26px no-repeat; }"
+    },
+    {
+      "name": "Insert Card with Code Button",
+      "kind": "card",
+      "refersTo": "insert-card",
+      "description": "Loose sage insert tucked into the fold, holding a dashed copy-code button with a solid-ink chip.",
+      "html": "<aside class=\"ds-insert\"><h3 class=\"ds-insert__h\">Rezervační kód</h3><p>Rezervujte do 15. února 2027.</p><button class=\"ds-code\" type=\"button\"><span class=\"ds-code__value\">KLARAMATEJ27</span><span class=\"ds-code__action\"><svg viewBox=\"0 0 256 256\" aria-hidden=\"true\"><path d=\"M216,32H88a8,8,0,0,0-8,8V80H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H168a8,8,0,0,0,8-8V176h40a8,8,0,0,0,8-8V40A8,8,0,0,0,216,32ZM160,208H48V96H160Zm48-48H176V88a8,8,0,0,0-8-8H96V48H208Z\"/></svg><span>Kopírovat</span></span></button></aside>",
+      "css": ".ds-insert { width: min(100%, 22rem); margin: 1.5rem; padding: 1.4rem 1.5rem 1.5rem; background: var(--paper-insert, #e7ede6); border-radius: 2px; transform: rotate(1.4deg); color: var(--ink, #1e3b30); font-family: var(--sans, \"Atkinson Hyperlegible Next\", \"Segoe UI\", system-ui, sans-serif); box-shadow: 0 1px 1px rgb(0 0 0 / 0.14), 0 14px 28px -16px rgb(0 0 0 / 0.5); } .ds-insert__h { margin: 0 0 0.35rem; font-family: var(--serif, \"Bodoni Moda\", Didot, \"Bodoni 72\", \"Times New Roman\", serif); font-weight: 500; font-size: 1.35rem; } .ds-insert p { margin: 0; font-size: 1rem; color: var(--ink-2, #44594f); } .ds-code { margin-top: 1rem; width: 100%; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem 0.75rem; min-height: 52px; padding: 0.5rem 0.5rem 0.5rem 1rem; border: 1.5px dashed var(--ink, #1e3b30); border-radius: 4px; background: transparent; color: var(--ink, #1e3b30); cursor: pointer; transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1), background-color 160ms ease; } .ds-code:hover { background: var(--ink-wash, rgb(30 59 48 / 0.055)); } .ds-code:active { transform: scale(0.97); } .ds-code:focus-visible { outline: 2px solid var(--ink, #1e3b30); outline-offset: 3px; } .ds-code__value { font-family: var(--serif, \"Bodoni Moda\", Didot, \"Bodoni 72\", \"Times New Roman\", serif); font-weight: 700; font-size: 1.1rem; letter-spacing: 0.1em; } .ds-code__action { display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem; min-width: 8.25rem; margin-left: auto; padding: 0.45rem 0.7rem; border-radius: 3px; background: var(--ink, #1e3b30); color: var(--paper, #fbfaf5); font-family: var(--sans, \"Atkinson Hyperlegible Next\", \"Segoe UI\", system-ui, sans-serif); font-weight: 700; font-size: 0.95rem; } .ds-code__action svg { width: 1.15em; height: 1.15em; fill: currentColor; }"
+    },
+    {
+      "name": "Odesláno Stamp",
+      "kind": "custom",
+      "refersTo": "stamp",
+      "description": "Rubber stamp pressed onto the stub after a successful reply (the stamp-ink.png mask is omitted in this preview).",
+      "html": "<p class=\"ds-stamp\"><span>Odesláno</span><span>4. 10. 2026</span></p>",
+      "css": ".ds-stamp { display: inline-grid; justify-items: center; gap: 0.1rem; margin: 1rem; padding: 0.75rem 1.3rem 0.7rem; border: 3px solid var(--ink, #1e3b30); border-radius: 6px; box-shadow: inset 0 0 0 3px var(--paper, #fbfaf5), inset 0 0 0 4.5px var(--ink, #1e3b30); color: var(--ink, #1e3b30); font-family: var(--serif, \"Bodoni Moda\", Didot, \"Bodoni 72\", \"Times New Roman\", serif); text-transform: uppercase; letter-spacing: 0.18em; font-weight: 700; font-size: 1.15rem; line-height: 1.15; transform: rotate(-7deg); opacity: 0.88; } .ds-stamp span + span { font-size: 0.72rem; letter-spacing: 0.14em; font-weight: 600; } @media (prefers-reduced-motion: no-preference) { .ds-stamp { animation: ds-stamp-press 280ms cubic-bezier(0.23, 1, 0.32, 1) 60ms backwards; } } @keyframes ds-stamp-press { 0% { transform: rotate(-7deg) scale(1.45); opacity: 0; } 70% { transform: rotate(-7deg) scale(0.97); opacity: 0.92; } 100% { transform: rotate(-7deg) scale(1); opacity: 0.88; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "One Ink on Cotton Stock",
+    "overview": "The site is a printed Czech wedding announcement (svatební oznámení) unfolded into one long leporello card. A single sheet of bright cotton card stock lies on a deep rosemary-green envelope, and everything on it is printed in one ink, the same green. Panels are divided by fold creases, photographs are tipped-in prints held by photo corners, the hotel code is a loose insert card, the weekend is a printed programme with dotted leaders, and the RSVP is a perforated reply slip (odpovědní lístek) that tears off and gets rubber-stamped \"Odesláno\". Every device on the page has to exist on a real piece of stationery; if it couldn't be printed, folded, tipped in, torn or stamped, it doesn't belong.\n\nThe density is a letter's, not an app's. One centred column (46rem) carries everything, with generous panel padding and 18px reading text for older guests on phones. Engraved Didone type (Bodoni Moda) carries the announcement voice: names, headings, the formula, spaced-caps dates, times and the stamp. Atkinson Hyperlegible Next carries everything a guest reads at length, taps or types. Controls are printed reply-card boxes and fill-in boxes: an empty box is a printed outline, a chosen box is filled with ink.\n\nMotion behaves like ink on paper: quick ease-out presses and ticks, one deliberate tear, nothing that loops. Night mode dims the stock and deepens the envelope, but the card always stays paper. The world rejects the wedding-template stack (full-bleed couple photo hero, script-font names, countdown, grids of detail cards).",
+    "keyCharacteristics": [
+      "One ink (rosemary green) on cotton stock, laid on an envelope of the same green.",
+      "Didone engraving for the announcement voice, a hyperlegible sans for reading and replying.",
+      "Stationery components only: fold creases, perforation, tick boxes, fill-in boxes, tipped-in prints, insert card, dotted leaders, rubber stamp.",
+      "Real paper physics for depth: soft drop shadows only where paper lies on paper.",
+      "Small paper corners (2-4px), never pills.",
+      "Ink-on-paper motion: ticks draw in 200ms, presses scale to 0.97, one 640ms tear-off, a 280ms stamp press.",
+      "Large text, 44px targets, full meaning with no hover or motion."
+    ],
+    "rules": [
+      {
+        "name": "The One Ink Rule",
+        "body": "Everything printed is Rosemary Ink or a transparency of it. There is no second accent, no gold and no blush. Correction Red appears only when something is wrong.",
+        "section": "colors"
+      },
+      {
+        "name": "The Paper Stays Paper Rule",
+        "body": "Night mode dims the stock and deepens the envelope. It never inverts the card into light-on-dark, because an announcement is paper at any hour.",
+        "section": "colors"
+      },
+      {
+        "name": "The Hint Floor Rule",
+        "body": "Hint Ink sits only on Cotton Stock or Folded Stock. On the Sage Insert it drops to 4.4:1, so insert copy uses Secondary Ink.",
+        "section": "colors"
+      },
+      {
+        "name": "The Engraver and the Reader Rule",
+        "body": "Bodoni Moda speaks for the couple: names, headings, formula, spaced caps, times, monogram and stamp. Atkinson Hyperlegible Next serves the guest: every paragraph, label, hint, error, button and form value. Bodoni never sets a paragraph or a form field, and never goes below 0.72rem (the stamp date only).",
+        "section": "typography"
+      },
+      {
+        "name": "The Short Caps Rule",
+        "body": "Uppercase is only for single short lines in spaced Bodoni caps (a date, a place, a day label, the stamp). It never wraps past two lines and never applies to Atkinson.",
+        "section": "typography"
+      },
+      {
+        "name": "The Letterpress Rule",
+        "body": "Large Bodoni (headlines, names, back names, the stub question) carries a two-edge text shadow (`0 1px 0` white at 75%, `0 -0.5px 0` ink at 18%) so the type reads as pressed into the stock. Small type never gets it.",
+        "section": "typography"
+      },
+      {
+        "name": "The Paper Physics Rule",
+        "body": "Only paper resting on paper casts a shadow: the card on the envelope, a print or insert on the card. Printed controls never lift, never glow, and never gain a shadow on hover.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Light, Not Lines Rule",
+        "body": "Folds and the monogram are drawn with highlight and shade gradients, never with a border or a hard rule.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Paper Corner Rule",
+        "body": "Paper 3px, printed boxes 2px, controls 4px, stamp 6px. Circles exist only as perforation holes and edge notches. Nothing is ever a pill.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do print everything in Rosemary Ink or its washes and rules on Cotton, Folded or Sage stock, and keep Correction Red for errors only.",
+      "Do alternate Cotton Stock and Folded Stock panel by panel, and open every panel after the first with the fold-crease valley.",
+      "Do set the couple's voice in Bodoni Moda (names in italic as the largest type, headings in roman with at most one italic word, dates and places in spaced caps) and everything a guest reads, taps or types in Atkinson Hyperlegible Next at 1.125rem or larger for body.",
+      "Do build controls as printed stationery: 1.5px ink outlines, 2px corners, empty means outline and chosen means ink fill.",
+      "Do mount photographs as tipped-in prints with a white border, envelope-green photo corners and a slight rotation (within about ±2.5deg).",
+      "Do set times as tabular Bodoni numerals with dotted leaders running to the event name.",
+      "Do tie every single-letter preposition or conjunction to the next word with a non-breaking space, write dates as `12.&nbsp;června 2027`, and use Czech three-form plurals.",
+      "Do keep every target at least 44px, gate hover to fine pointers, and give every motion a reduced-motion path that is opacity-only and 160ms or shorter.",
+      "Do keep motion to ease-out presses and ticks of 280ms or less, with the 640ms tear as the only long movement."
+    ],
+    "donts": [
+      "Don't add a second accent colour, gradient fills, or tinted section backgrounds beyond the three stocks.",
+      "Don't invert the card in night mode. Only dim the stock and deepen the envelope.",
+      "Don't set paragraphs, labels, hints or form values in Bodoni, or Atkinson in uppercase.",
+      "Don't use uppercase for anything longer than a short spaced-caps line.",
+      "Don't give printed controls shadows, glows or lift on hover. Shadows belong only to paper resting on paper.",
+      "Don't round anything into a pill, and don't exceed 4px on controls (the 6px stamp is the only exception).",
+      "Don't put Hint Ink on the Sage Insert.",
+      "Don't add looping, scroll-triggered or parallax motion.",
+      "Don't reach for the wedding-template stack: a full-bleed couple photo hero, script-font names, a countdown, or grids of detail cards.",
+      "Don't add small-caps kicker or eyebrow labels above headings. Each panel opens on its Bodoni headline."
+    ]
+  }
+}
