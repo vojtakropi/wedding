@@ -1,23 +1,23 @@
-# Klára & Matěj · svatební web
+# Vojtěch & Simona · svatební web
 
 Jednostránkový svatební web s formulářem pro potvrzení účasti, který každého hosta (včetně stravovacích omezení a alergií) zapíše do Google Tabulky. Čisté HTML, CSS a JavaScript: žádný build, žádné závislosti, připraveno pro Cloudflare.
 
-Všechna jména, data, místa a fotky jsou **ukázkové**. Viz [Přizpůsobení](#přizpůsobení).
+Jména a místa jsou skutečná (obřad v kapli sv. Anny v Horním Údolí u Zlatých Hor, hostina v restauraci Kovárna v Horní Lipové). Datum, časy programu a termín odpovědi jsou zatím **ukázkové**. Viz [Přizpůsobení](#přizpůsobení).
 
 ```
 public/                      vše, co se nasazuje
-  index.html                 hlavní strana: oznámení, náš příběh, odpovědní lístek
-  program/index.html         program víkendu
+  index.html                 hlavní strana: oznámení, náš den, odpovědní lístek
+  program/index.html         program svatby
   doprava/index.html         místo, doprava, ubytování
   dotazy/index.html          dobré vědět (časté dotazy)
   404.html                   stránka pro neexistující adresu
   assets/css/styles.css      design (barvy, písma, zaoblení) na začátku souboru
   assets/js/config.js        sem patří adresa pro odesílání odpovědí
   assets/js/main.js          odpočet, menu, galerie, logika formuláře
-  assets/img/                fotky (licence Unsplash, přes picsum.photos)
+  assets/img/                fotky (Wikimedia Commons, licence CC, autoři v .json a na webu)
   assets/fonts/              vlastní hosting písem Bodoni Moda + Atkinson Hyperlegible Next
   assets/img/texture/        textura papíru a obálky (generovaná, viz poznámky)
-  assets/klara-matej-wedding.ics   soubor pro "Přidat do kalendáře"
+  assets/vojtech-simona-svatba.ics   soubor pro "Přidat do kalendáře"
   _headers                   bezpečnostní hlavičky a cache pro Cloudflare
 apps-script/Code.gs          Google Apps Script, který přijímá odpovědi
 wrangler.jsonc               nastavení Cloudflare Workers (statické soubory)
@@ -40,8 +40,8 @@ Dokud nevyplníte adresu pro odesílání, formulář běží v **ukázkovém re
 1. Otevřete svou tabulku: https://docs.google.com/spreadsheets/d/1WrF2YSgkZgrkZVT27Fm5Trc4ZuIZhV2wE8zL6bHYLLQ/edit (její ID je už v `Code.gs` jako `SPREADSHEET_ID`; pro jinou tabulku ho tam přepište).
 2. V tabulce otevřete **Rozšíření → Apps Script**. Smažte ukázkový kód, vložte obsah `apps-script/Code.gs` a uložte.
 3. V nabídce funkcí vyberte **`setup`** a klikněte na **Spustit**. Potvrďte oprávnění (je to váš vlastní skript). Vzniknou dva listy:
-   - **Odpovědi**: jeden řádek na hosta: jméno, věk, stravovací omezení, poznámky k alergiím, části víkendu, písnička, vzkaz.
-   - **Přehled**: živé součty (kolik hostů dorazí, dospělí/děti, kdo nedorazí, počty na jednotlivé části víkendu a na každé stravovací omezení).
+   - **Odpovědi**: jeden řádek na hosta: jméno, věk, stravovací omezení, poznámky k alergiím, dny (pátek s přespáním, sobota, neděle s přespáním), písnička, vzkaz.
+   - **Přehled**: živé součty (kolik hostů dorazí, dospělí/děti, kdo nedorazí, počty hostů na jednotlivé dny a na každé stravovací omezení).
 4. **Nasadit → Nové nasazení →** typ **Webová aplikace**
    - *Spustit jako:* **Já**
    - *Kdo má přístup:* **Kdokoli**
@@ -59,7 +59,7 @@ Dokud nevyplníte adresu pro odesílání, formulář běží v **ukázkovém re
 
 ### Ochrana
 
-- Kontrola na webu i na serveru (skript povolí jen známé části víkendu, stravovací omezení a věkové skupiny a omezuje délku textu i počet hostů).
+- Kontrola na webu i na serveru (skript povolí jen známé dny, stravovací omezení a věkové skupiny a omezuje délku textu i počet hostů).
 - Skryté pole (past na roboty) tiše zahodí jednoduchý spam.
 - Text začínající `=`, `+`, `-` nebo `@` se upraví, aby nikdo nemohl do tabulky vložit vzorec.
 - Data se posílají jako `text/plain`, takže prohlížeč nepotřebuje CORS preflight (Apps Script ho neumí obsloužit).
@@ -92,22 +92,21 @@ Stránka je nastavená jako `noindex` (meta značka, hlavička `X-Robots-Tag` a 
 
 | Co | Kde |
 |---|---|
-| Jména, datum, příběh, odpovědní lístek | `public/index.html` |
-| Program víkendu | `public/program/index.html` |
-| Místo, doprava, ubytování, rezervační kód | `public/doprava/index.html` |
+| Jména, datum, náš den, odpovědní lístek | `public/index.html` |
+| Program svatby | `public/program/index.html` |
+| Místo, doprava, ubytování | `public/doprava/index.html` |
 | Časté dotazy | `public/dotazy/index.html` |
 | Odkazy v menu | lišta `<header class="bar">` ve všech čtyřech stránkách (+ `404.html`) |
-| Pozvánka do kalendáře | `public/assets/klara-matej-wedding.ics` (časy v UTC) |
+| Pozvánka do kalendáře | `public/assets/vojtech-simona-svatba.ics` (časy v UTC) |
 | Kontaktní e-mail | patička všech stránek, `dotazy/index.html` + `config.js` |
-| Rezervační kód | `data-copy="KLARAMATEJ27"` v `doprava/index.html` |
 | Termín pro odpověď | `index.html` (přední strana + úvod odpovědního lístku) |
-| Části víkendu na výběr | volby v `index.html` **a** `EVENT_OPTIONS` v `Code.gs` |
+| Dny na výběr (pátek / sobota / neděle) | volby v `index.html` **a** `EVENT_OPTIONS` v `Code.gs` |
 | Stravovací omezení | volby v `#guest-template` **a** `DIETARY_OPTIONS` v `Code.gs` |
 | Max. hostů na odpověď | `maxGuests` v `config.js` **a** `MAX_GUESTS` v `Code.gs` |
 | Barvy, písma, zaoblení | proměnné na začátku `styles.css` (světlý i tmavý režim) |
 | Náhledový obrázek pro sdílení | `public/assets/img/og.jpg` (1200 × 630) |
 
-**Fotky:** nahraďte soubory v `public/assets/img/` vlastními se stejnými názvy (nebo upravte `src`/`srcset` v `index.html`). Dvě fotky v příběhu se ořezávají na 4:5, fotka vily na 12:7. Exportujte do WebP ve dvou velikostech (`-800` a `-1600`, vila `-1200` a `-2400`). Všechny současné fotky jsou ukázkové (Unsplash); původ každé je zapsaný v souboru `.json` vedle ní.
+**Fotky:** nahraďte soubory v `public/assets/img/` vlastními se stejnými názvy (nebo upravte `src`/`srcset` v `index.html`). Dvě fotky v sekci Náš den se ořezávají na 4:5, fotka kaple na stránce Doprava na 12:7. Exportujte do WebP ve dvou velikostech (`-800` a `-1600`, kaple `-1200` a `-2400`). Současné fotky jsou z Wikimedia Commons pod licencemi CC BY-SA 4.0 a CC BY 3.0: autor a odkaz jsou v souboru `.json` vedle každé fotky a licence vyžaduje, aby zůstal uvedený i na webu (řádek `.credits`). Když fotku nahradíte vlastní, řádek s autorem smažte.
 
 ## Poznámky k designu
 

@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Vojtech a Simona//Svatba//CS
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:vojtech-simona-svatba-20270612@example.com
+DTSTAMP:20261016T120000Z
+DTSTART:20270612T133000Z
+DTEND:20270612T230000Z
+SUMMARY:Svatba Vojtěcha a Simony
+LOCATION:Kaple sv. Anny\, Horní Údolí\, 793 76 Zlaté Hory
+DESCRIPTION:Obřad v 15:30 v kapli sv. Anny v Horním Údolí u Zlatých Hor.
+  Usaďte se prosím do 15:15. Potom hostina a zábava v restauraci Kovárna\, 
+ Horní Lipová 36\, 790 63 Lipová-lázně.
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Zítra se berou Vojtěch a Simona
+END:VALARM
+END:VEVENT
+END:VCALENDAR

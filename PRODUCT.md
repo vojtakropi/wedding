@@ -30,15 +30,16 @@ A personal invitation, not a template: one couple, one weekend, one place. The R
 ## Capabilities and Constraints
 
 - Plain static HTML/CSS/JS, no build step (existing codebase; Cloudflare deploy).
-- RSVP data contract must stay: name, email, attending yes/no, events (Páteční aperitivo, Sobotní svatba, Nedělní brunch), guests (name, age group Dospělý / Dítě (do 12 let), dietary tags, allergy notes), song, message, honeypot `website`. Posted as `text/plain` JSON to the Apps Script `/exec` URL; `apps-script/Code.gs` validates against the same option lists.
+- RSVP data contract must stay: name, email, attending yes/no, events (Pátek (přespání), Sobota (svatba), Neděle (přespání): which days each household comes and which nights they sleep over), guests (name, age group Dospělý / Dítě (do 12 let), dietary tags, allergy notes), song, message, honeypot `website`. Posted as `text/plain` JSON to the Apps Script `/exec` URL; `apps-script/Code.gs` validates against the same option lists.
 - Up to 6 guests per reply. Drafts persist locally; demo mode when no endpoint is configured.
 - Page is `noindex` (private event).
-- Section content (story, three-day programme, venue and travel, FAQ, RSVP copy) stays as written in Czech.
+- Section content (our day, one-day programme, venues and travel, FAQ, RSVP copy) stays as written in Czech.
 
 ## Evidence on Hand
 
-- All couple and event details are placeholders (Klára & Matěj, 12. 6. 2027, Villa Le Cipressaie, Val d'Orcia, Toskánsko). The couple will replace them later.
-- Photos in `public/assets/img/` are Unsplash-licensed placeholders (via picsum.photos); no real photos of the couple exist yet. Do not present stock people as the couple.
+- The couple is Vojtěch Kropáček and Simona Rotterová. Ceremony: Kaple sv. Anny, Horní Údolí, 793 76 Zlaté Hory v Jeseníkách. Reception (food and fun): Restaurace Kovárna, Horní Lipová 36, 790 63 Lipová-lázně (about 30 km / 40 min by car).
+- Still placeholders: the date (12. 6. 2027), programme times and RSVP deadline. Contact email: vojta.se@seznam.cz.
+- Photos in `public/assets/img/` are real photos of the chapel and the Jeseníky landscape from Wikimedia Commons (CC BY-SA 4.0 / CC BY 3.0, credited on the page). No photos of the couple or of Restaurace Kovárna exist yet. Do not present stock people as the couple.
 - No testimonials, registry, or vendor claims exist; do not invent any.
 
 ## Product Principles

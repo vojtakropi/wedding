@@ -30,7 +30,7 @@ const HEADERS = [
   'Kontaktní osoba',
   'E-mail',
   'Účast',
-  'Části víkendu',
+  'Dny',
   'Host č.',
   'Jméno hosta',
   'Věk',
@@ -40,12 +40,12 @@ const HEADERS = [
   'Vzkaz',
 ];
 
-// Musí odpovídat volbám v public/index.html (#guest-template a výběr částí víkendu).
+// Musí odpovídat volbám v public/index.html (#guest-template a výběr dnů).
 const DIETARY_OPTIONS = [
-  'Vegetariánská', 'Veganská', 'Pescetariánská', 'Bez lepku', 'Bez laktózy',
-  'Alergie na ořechy', 'Alergie na korýše', 'Halal', 'Košer',
+  'Vegetariánská', 'Veganská', 'Bez lepku', 'Bez laktózy',
+  'Alergie na ořechy', 'Alergie na korýše',
 ];
-const EVENT_OPTIONS = ['Páteční aperitivo', 'Sobotní svatba', 'Nedělní brunch'];
+const EVENT_OPTIONS = ['Pátek (přespání)', 'Sobota (svatba)', 'Neděle (přespání)'];
 const AGE_OPTIONS = ['Dospělý', 'Dítě (do 12 let)'];
 const MAX_GUESTS = 6;
 
@@ -123,7 +123,7 @@ function setup() {
     ['Děti', `=COUNTIFS(${r}E:E,"Ano",${r}I:I,"Dítě*")`],
     ['Domácnosti, které nedorazí', `=COUNTIF(${r}E:E,"Ne")`],
     ['', ''],
-    ['Části víkendu (počet hostů)', ''],
+    ['Dny (počet hostů)', ''],
     ...EVENT_OPTIONS.map((ev) => [ev, `=COUNTIFS(${r}E:E,"Ano",${r}F:F,"*${ev}*")`]),
     ['', ''],
     ['Stravovací omezení (počet hostů)', ''],
@@ -132,7 +132,7 @@ function setup() {
   ];
   summary.getRange(1, 1, lines.length, 2).setValues(lines);
   summary.setColumnWidth(1, 260);
-  ['Přehled', 'Části víkendu (počet hostů)', 'Stravovací omezení (počet hostů)'].forEach((title) => {
+  ['Přehled', 'Dny (počet hostů)', 'Stravovací omezení (počet hostů)'].forEach((title) => {
     const idx = lines.findIndex((l) => l[0] === title);
     summary.getRange(idx + 1, 1).setFontWeight('bold');
   });
@@ -167,7 +167,7 @@ function validate_(d) {
   if (attending === 'Ne') return { name, email, attending, events: [], guests: [], song: '', message };
 
   const events = (Array.isArray(d.events) ? d.events : []).filter((ev) => EVENT_OPTIONS.indexOf(ev) !== -1);
-  if (!events.length) throw new Error('Vyberte aspoň jednu část víkendu.');
+  if (!events.length) throw new Error('Vyberte aspoň jeden den.');
 
   const rawGuests = Array.isArray(d.guests) ? d.guests.slice(0, MAX_GUESTS) : [];
   const guests = rawGuests.map((g, i) => ({
@@ -209,7 +209,7 @@ function notify_(c, id) {
     `ID odpovědi: ${id}`,
   ];
   if (c.attending === 'Ano') {
-    lines.push(`Části víkendu: ${c.events.join(', ')}`, '');
+    lines.push(`Dny: ${c.events.join(', ')}`, '');
     c.guests.forEach((g, i) => {
       lines.push(`${i + 1}. ${g.name} (${g.age})${g.dietary.length ? ' | ' + g.dietary.join(', ') : ''}${g.notes ? ' | ' + g.notes : ''}`);
     });

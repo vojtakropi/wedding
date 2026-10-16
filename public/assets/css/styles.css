@@ -398,6 +398,9 @@ button, input, select, textarea { font: inherit; color: inherit; }
   font-family: var(--serif); font-style: italic; font-size: 1.65rem; line-height: 1;
   font-variant-numeric: lining-nums;
 }
+/* Autorství převzatých fotek (licence CC to vyžaduje). */
+.credits { margin-top: clamp(1.5rem, 4vw, 2rem); font-size: 0.85rem; color: var(--ink-3); }
+.credits a { color: inherit; }
 
 /* ---------- Programme -------------------------------------------------------- */
 .day { margin-top: clamp(2.25rem, 6vw, 3rem); }

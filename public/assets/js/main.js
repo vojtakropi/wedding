@@ -2,7 +2,7 @@
   "use strict";
 
   const config = Object.assign(
-    { rsvpEndpoint: "", maxGuests: 6, contactEmail: "svatba@example.com" },
+    { rsvpEndpoint: "", maxGuests: 6, contactEmail: "vojta.se@seznam.cz" },
     window.WEDDING_CONFIG || {}
   );
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -184,7 +184,7 @@
       els.addGuest.disabled = full;
       $("[data-add-label]", els.addGuest).textContent = full
         ? `Nejvýš ${config.maxGuests} ${plural(config.maxGuests, "host", "hosté", "hostů")} na formulář`
-        : "Přidat hosta";
+        : "Přidat hosta (můj +1)";
     }
 
     /* ----- attending ----- */
@@ -257,7 +257,7 @@
       if (!setError(els.email, $("#f-email-err"), emailMsg)) invalid.push(els.email);
 
       if (data.attending === "yes") {
-        eventsError.textContent = data.events.length ? "" : "Vyberte aspoň jednu část víkendu.";
+        eventsError.textContent = data.events.length ? "" : "Vyberte aspoň jeden den.";
         if (!data.events.length) invalid.push($('input[name="events"]', form));
 
         guestCards().forEach((card) => {
@@ -370,7 +370,7 @@
 
     function renderSuccess(sent) {
       const yes = sent.attending === "yes";
-      els.successTitle.textContent = yes ? "Grazie! Uvidíme se v Toskánsku." : "Děkujeme za odpověď. Budete nám chybět.";
+      els.successTitle.textContent = yes ? "Děkujeme! Uvidíme se v Jeseníkách." : "Děkujeme za odpověď. Budete nám chybět.";
       els.successText.textContent = yes
         ? `Vaši odpověď jsme uložili${sent.demo ? " (ukázkový režim, nic se neodeslalo)" : ""}. Shrnutí najdete níže. Kdyby se něco změnilo, pošlete prostě novou odpověď a my použijeme tu nejnovější.`
         : `Vaši odpověď jsme uložili${sent.demo ? " (ukázkový režim, nic se neodeslalo)" : ""}. V den svatby si na vás připijeme.`;
